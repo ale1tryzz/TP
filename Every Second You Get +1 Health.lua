@@ -42,7 +42,7 @@ Section:NewLabel("3 wins teleport")
 
 
 Section:NewButton("3 wins obby", "ButtonInfo", function()
-    game:GetService("Workspace").HochuChlenRomy.HumanoidRootPart.CFrame = game:GetService("Workspace").Wins.Hole.CFrame
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Wins.Hole.CFrame
 
 end)
 
@@ -51,6 +51,7 @@ Section:NewSlider("WalkSpeed", "SliderInfo", 500, 0, function(s) -- 500 (Мак�
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
+
 local Tab = Window:NewTab("Teleports 2 wins")
 
 local Section = Tab:NewSection("Teleport")
@@ -58,13 +59,13 @@ local Section = Tab:NewSection("Teleport")
 Section:NewLabel("2 wins teleport")
 
 Section:NewButton("2 wins obby", "ButtonInfo", function()
-    game:GetService("Workspace").HochuChlenRomy.HumanoidRootPart.CFrame = game:GetService("Workspace").Wins.Obby.CFrame
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Wins.Obby.CFrame
 end)
 
 Section:NewLabel("2 wins tower")
 
 Section:NewButton("2 wins obby", "ButtonInfo", function()
-    game:GetService("Workspace").HochuChlenRomy.HumanoidRootPart.CFrame = game:GetService("Workspace").Wins.Tower.CFrame
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Wins.Tower.CFrame
 end)
 
 local Tab = Window:NewTab("Teleports 1 wins")
@@ -74,5 +75,5 @@ local Section = Tab:NewSection("Teleport")
 Section:NewLabel("1 wins obby teleport")
 
 Section:NewButton("1 wins obby", "ButtonInfo", function()
-    game:GetService("Workspace").HochuChlenRomy.HumanoidRootPart.CFrame = game:GetService("Workspace").Wins.Conveyor.CFrame
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Wins.Conveyor.CFrame
 end)
